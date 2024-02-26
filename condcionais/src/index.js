@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom"
+import Contador from "./Contator";
 
 //Componente
 class Componente extends React.Component{
@@ -24,7 +25,7 @@ class Componente extends React.Component{
         //condicional
         let meuTexto = ''
 
-        if(this.state.exibir == true){
+        if(this.state.exibir === true){
             meuTexto = <h1>Olá! Utilizando condicionais</h1>
         }else{
             meuTexto = ''
@@ -37,4 +38,7 @@ class Componente extends React.Component{
         )
     }
 }
-ReactDOM.render(<Componente />, document.getElementById('root'))
+ReactDOM.render(
+        <div>
+        <Componente /> <Contador />
+        </div>, document.getElementById('root'))

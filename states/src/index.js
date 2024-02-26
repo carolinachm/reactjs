@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import ReactDOM from "react-dom";
+import Contador from "./Contador";
 
 class Componente extends React.Component {
 
@@ -16,4 +17,10 @@ class Componente extends React.Component {
     }
 }
 
-ReactDOM.render(<Componente />, document.getElementById('root'))
+ReactDOM.render(
+    <div>
+        <Componente />
+        <Contador />
+    </div>,
+ document.getElementById('root')
+ )
